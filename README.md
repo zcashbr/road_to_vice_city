@@ -1,44 +1,34 @@
-# LiveZEC GTA VI Giveaway: Official Draw & Verification
+# Road to Vice City — Official Draws & Verification
 
-Welcome to the official public repository for the first **Road to Vice City** giveaway hosted by LiveZEC. This repository serves as a transparent, verifiable, and immutable record of the participants and the draw mechanism.
+Public, verifiable, and immutable record of the **Road to Vice City** giveaways hosted by LiveZEC. Each draw keeps its own frozen record — rules, entry list, published hash, and result — so anyone can independently verify the outcome.
 
-## 🏆 The Prize
-One (1) $100 Gift Card for either the PlayStation or Xbox platform (to be used towards the purchase of GTA VI: Ultimate Edition, launching November 19, 2026). The prize cannot be exchanged for cash.
+## 📜 Draws
 
-## 🔒 Locked Entry List & Verification
-The entry period concluded on **September 10, 2026, at 11:59 PM (UTC)**. All entries have been meticulously verified by the LiveZEC core team. 
+| # | Period | Max entries/user | Status | Record |
+|---|--------|------------------|--------|--------|
+| 1 | September 2026 | 6 | Concluded | [`draws/01-2026-09`](draws/01-2026-09/README.md) · Release `1.0` |
+| 2 | October 2026 | 8 | In progress | [`draws/02-2026-10`](draws/02-2026-10/README.md) · Release `2.0` |
 
-* **Total Valid Entries:** 54 (numbered 1 to 54)
-* **Maximum per user:** Up to 6 entries (1 for social media actions + 5 for broadcasting a VOD using the LiveZEC overlay on software like OBS Studio).
-* **Public File:** The complete `.txt` list of entries is available for download in this repository's **Releases** section.
+Each draw folder contains:
+* `README.md` — the exact rules published for that draw
+* `entries.sha256` — SHA-256 of the final entry list, locked before the draw
+* `result.md` — target block, winning number, and winner once drawn
 
-To ensure no tampering can occur between the publication of the list and the actual draw, the cryptographic hash of the entry list file is locked and published below:
+The full `.txt` entry list for each draw is attached to its matching **Release** (tag `1.0`, `2.0`, …).
 
-**SHA-256 Hash of the Entry List:**
-> `e9f66cc64c1db75f337bdab3d46107949b62e3ad6f1225fa2e9721f46ca9dc38`
+## ⚙️ The Draw Method (common to all draws)
+**The Zcash blockchain picks the winner.** Anyone can verify using any standard Zcash block explorer.
 
-*Published BEFORE the draw block exists, ensuring absolute fairness. No one, including the LiveZEC team, can influence or predict the winner.*
+1. **Target block** — the first Zcash block mined after a date/time announced *before* that block exists.
+2. **Extraction** — split the block hash into 2-character pairs, reading **right to left**.
+3. **Winner** — the first pair that is a valid entry number (between `01` and the total number of entries) wins; pairs with letters or out-of-range numbers are skipped.
 
-## ⚙️ How the Draw Works (Provably Fair)
-**Draw method: The Zcash blockchain picks the winner.**
+The entry list hash and the target block time are always published **before** the block is mined, so no one — including the LiveZEC team — can influence or predict the winner.
 
-We are utilizing a decentralized and public method. Anyone can verify the outcome using any standard Zcash block explorer. 
-
-1. **The Target Block:** The winning number will be derived from the hash of the **FIRST Zcash block mined after September 14, 2026, 23:00 UTC**.
-2. **The Extraction Method:** We will split the block hash into 2-character pairs, reading from **right to left**.
-3. **The Winner:** The first pair containing two digits between `01` and `54` wins. If a pair contains letters or numbers above 54, we skip to the next pair.
-
-<details>
-<summary><b>🔍 Click here to see the Example Breakdown</b></summary>
-
-If the block hash ends in `...A32B131`: 
-* We split the end into pairs reading right to left: `31`, `B1`, `32`
-* `31` ✓ (Valid number between 01 and 54)
-* `B1` ✖ (Contains a letter, skipped)
-* `32` ✓ (Valid, but `31` was found first)
-* **Result:** The winner would be entry **#31**.
-
-</details>
+## 🔎 How to Verify a Draw
+1. Download that draw's `entries.txt` from its Release and check its SHA-256 matches the one published in the draw's `README.md` / `result.md`.
+2. Look up the target block on a Zcash explorer and read its hash.
+3. Apply the extraction method above — you should land on the same winning number recorded in `result.md`.
 
 ---
 
@@ -56,7 +46,7 @@ For any inquiries, please contact the official LiveZEC account via direct messag
 <details>
 <summary><b>⚖️ Legal Disclaimer (Click to expand)</b></summary>
 
-*No purchase necessary to enter. Must be 18 years or older to have participated.*
+*No purchase necessary to enter. Must be 18 years or older.*
 
 *This promotion is in no way sponsored, endorsed, administered by, or associated with Rockstar Games, Take-Two Interactive, X Corp., Sony, Microsoft, Netflix, or any of their affiliates. All game titles and trademarks are the property of their respective owners.*
 </details>
