@@ -20,26 +20,26 @@ Each broadcast must be gameplay or a conversation about Zcash, at least **30 min
 ## 🔒 Locked Entry List & Verification
 <!-- Published AFTER entries close (October 15, 2026) and BEFORE the draw block exists. -->
 
-* **Total Valid Entries:** `<N>` (numbered 1 to `<N>`)
+* **Total Valid Entries:** `48` (numbered 1 to `48`)
 * **Maximum per user:** 8 entries
 * **Public File:** the complete `.txt` list of entries is available in this repository's **Releases** section (tag `2.0`).
 
 **SHA-256 Hash of the Entry List:**
-> `<TODO: publish the SHA-256 of entries.txt here before the draw>`
+> `5D91F0A5D4F2C72C3F217BE7C226A4F90648E57B07D4264DA875826640B235C9`
 
 *Published BEFORE the draw block exists, ensuring absolute fairness. No one, including the LiveZEC team, can influence or predict the winner.*
 
 ## ⚙️ How the Draw Works (Provably Fair)
 **Draw method: the Zcash blockchain picks the winner.** Anyone can verify the outcome using any standard Zcash block explorer.
 
-1. **The Target Block:** the winning number is derived from the hash of the **FIRST Zcash block mined after `<TODO: date & time in UTC, published before it exists>`**.
+1. **The Target Block:** the winning number is derived from the hash of the **FIRST Zcash block mined after `Monday, October 19, 2026 at 9:00 PM UTC`**.
 2. **The Extraction Method:** split the block hash into 2-character pairs, reading from **right to left**.
-3. **The Winner:** the first pair containing two digits between `01` and `<N>` wins. If a pair contains letters or a number above `<N>`, skip to the next pair.
+3. **The Winner:** the first pair containing two digits between `01` and `48` wins. If a pair contains letters or a number above `48`, skip to the next pair.
 
 <details>
 <summary><b>🔍 Click here to see the Example Breakdown</b></summary>
 
-Assuming `<N>` is at least 32, if the block hash ends in `...A32B131`:
+With 48 entries, if the block hash ends in `...A32B131`:
 * Split the end into pairs reading right to left: `31`, `B1`, `32`
 * `31` ✓ (valid number in range)
 * `B1` ✖ (contains a letter, skipped)
@@ -66,5 +66,5 @@ For any inquiries, please contact the official LiveZEC account via direct messag
 
 *No purchase necessary to enter. Must be 18 years or older.*
 
-*This promotion is in no way sponsored, endorsed, administered by, or associated with Rockstar Games, Take-Two Interactive, X Corp., Sony, Microsoft, Netflix, or any of their affiliates. All game titles and trademarks are the property of their respective owners.*
+*This promotion is in no way sponsored, endorsed, administered by, or associated with Rockstar Games, Take-Two Interactive, X Corp., Sony, Microsoft or any of their affiliates. All game titles and trademarks are the property of their respective owners.*
 </details>
