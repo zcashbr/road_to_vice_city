@@ -15,5 +15,5 @@
 * **Target block height:** `3523641`
 * **Target block hash:** `00000000005b6f801e859de064c9d09c868eb1c95cfc08511237dbadaf5fdb73`
 * **Winning number:** `37`
-* **Winning entry (X.com handle):** `@prs728`
+* **Winning entry (X.com handle):** `@prs722`
 * **Block explorer link:** `https://mainnet.zcashexplorer.app/blocks/00000000005b6f801e859de064c9d09c868eb1c95cfc08511237dbadaf5fdb73`
