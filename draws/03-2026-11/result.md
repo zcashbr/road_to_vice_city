@@ -17,15 +17,17 @@
 
 ## Outcome
 
-* **Target block height:** `TBD`
-* **Target block timestamp:** `TBD`
-* **Target block hash:** `TBD`
-* **Block explorer link:** `TBD`
+* **Target block height:** `3569610`
+* **Target block timestamp:** `2026-11-13 18:00:08 UTC`
+* **Target block hash:** `00000000018d110948fda0628c839072cca6c60bf8ca9ffbfc50631ce4ec2f3d`
+* **Block explorer link:** https://mainnet.zcashexplorer.app/blocks/3569610
 
 ### Draw B — PS5
-* **Pairs read (right → left):** `TBD`
-* **Winning entry (X.com handle):** `TBD`
+* **Pairs read (right → left):** `3d` ✗ · `2f` ✗ · `ec` ✗ · `e4` ✗ · `1c` ✗ · **`63` ✓** (between `01` and `69`)
+* **Winning entry (X.com handle):** `#63` — **@keelvinTv**
 
 ### Draw A — GTA VI
-* **Pairs read (right → left):** `TBD`
-* **Winning entry (X.com handle):** `TBD`
+* **Pairs read (right → left):** `3d` ✗ · `2f` ✗ · `ec` ✗ · `e4` ✗ · `1c` ✗ · **`63` ✓** (between `01` and `72`)
+* **Drawn entry:** `#63` — @keelvinTv, who already won the PS5 (Draw B)
+* **Substitution:** same person won both → keeps the PS5; the GTA VI goes to the next entry on the GTA list belonging to a different person. Entries `#64`–`#67` also belong to @keelvinTv and are skipped.
+* **Winning entry (X.com handle):** `#68` — **@jehfox91**
